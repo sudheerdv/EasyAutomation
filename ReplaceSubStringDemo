@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class ReplaceSubString
+{
+	public static void main(String[] args) 
+	{
+		/*String str="Hai Hello";
+		//char[] c1=str.toCharArray();
+		String revStr=" ";*/
+		
+	/*	for(int i=c1.length-1;i>=0;i--)
+		{
+			revStr=revStr+c1[i];
+		}
+		//System.out.println(revStr);
+		
+		//replace String World
+		
+		String str1="Hi Hello I am Learning Selenium";
+		System.out.println("Before Replace :" +str1);
+		
+		String str2="Selenium";
+		String str3="Java";
+				
+		String str4=str1.replaceAll(str2, str3);
+		System.out.println("After Replace :" +str4);*/
+		
+		int WC=0;
+		Scanner sc=new Scanner(System.in);
+		String str2=sc.nextLine();
+		
+		char[] c1=str2.toCharArray();
+		
+		for(int i=0;i<c1.length-1;i++)
+		{
+			if((i>0)&&(c1[i]!=' ')&&(c1[i-1]==' ')||(i==0)&&(c1[0]!=' '))
+			{
+				WC++;
+			}
+		}		
+		System.out.println(WC);
+	}
+}
