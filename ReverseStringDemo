@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class ReverseString 
+{	
+	public static void main(String[] args)
+	{
+		//Reverse a String
+		//Scanner sc=new Scanner(System.in);
+		//String st=sc.nextLine();		
+		/*String rev= " "	;
+		
+		String str ="How are you";
+		char[] c1=str.toCharArray();
+		
+		for(int i=c1.length-1;i>=0;i--)
+		{
+			rev=rev+c1[i];
+		}	
+		
+		System.out.println(rev);*/
+		
+		//Reverse a Sentence
+		
+		/*String str="How are you";
+		String[] str1=str.split(" ");
+		String rev= " ";
+		
+		for(int i=str1.length-1;i>=0;i--)
+		{
+			rev=rev+str1[i]+" ";
+		}
+		System.out.println(rev);*/
+		
+		//Reverse Each world in a sentence
+		String str="How are you";
+		System.out.println(str);
+		String rev=" ";
+		String rev1=" ";
+		String[] str1=str.split(" ");
+		
+		for(int i=str1.length-1;i>=0;i--)
+		{
+			rev=rev+str1[i]+" ";
+		}	
+		
+		for(int i=str1.length-1;i>=0;i--)
+		{				
+			char[] c1=str1[i].toCharArray();	
+			
+			for(int i2=c1.length-1;i2>=0;i2--)
+			{
+				rev1=rev1+c1[i2]+" ";
+			}
+		}
+		System.out.println(rev1);
+	}
+}
