@@ -1,0 +1,46 @@
+
+public class EncapsulationDemo 
+{
+	//Wrapping up of Data member and Member functions into single unit
+	//Encapsulation can be achieved by using declare data member as private , and by using getter and setter method
+	
+	String stdname;
+	int age;
+	
+	//getter method
+	public String getstdname()
+	{		
+		return stdname;
+	}
+	
+	 public int getage()
+	 {		
+		 return age;
+	 }
+	
+	 //setter method
+	 
+	public void setname(String stdname)
+	{
+		this.stdname=stdname;
+	}
+	 
+	 public void setage(int age)
+	 {
+		 this.age=age;
+	 }
+	 
+	 
+	 public static void main(String[] args) 
+		{
+			EncapsulationDemo e1=new EncapsulationDemo();
+			e1.setname("sudheer");
+			e1.setage(10);
+			
+			String name= e1.getstdname();
+			int age = e1.getage();
+			
+			System.out.println(name);
+			System.out.println(age);
+		}
+}
