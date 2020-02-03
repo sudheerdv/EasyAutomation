@@ -1,0 +1,32 @@
+A.java
+public class A 
+{	
+	int a,b,c;
+	
+	public void Add(int a,int b)
+	{
+		c=a+b;
+		System.out.println(c);
+	}
+	
+	public void Add(int a,int b,int c)
+	{
+		c=a+b+c;
+		System.out.println(c);
+	}	
+}
+
+
+B.java
+public class B 
+{
+	public static void main(String[] args)
+	{
+		
+		A a=new A();
+		
+		a.Add(2, 3);
+		
+		a.Add(3, 4, 5);
+	}
+}
